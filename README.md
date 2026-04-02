@@ -193,4 +193,4 @@ Three charts are generated per experiment:
 
 **Saanika Patil**
 MS Data Science · University of Maryland, College Park
-[LinkedIn](https://www.linkedin.com/in/saanika-patil) · [Portfolio](#) · [GitHub](https://github.com/saanikapatil08)
+
