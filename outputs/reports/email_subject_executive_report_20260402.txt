@@ -1,0 +1,74 @@
+
+╔══════════════════════════════════════════════════════════════╗
+║          A/B EXPERIMENT — EXECUTIVE REPORT                  ║
+╚══════════════════════════════════════════════════════════════╝
+
+  Experiment   : Email Subject
+  Report Date  : 2026-04-02 19:29
+  Analyst      : Saanika Patil
+
+══════════════════════════════════════════════════════════════
+  EXPERIMENT OVERVIEW
+══════════════════════════════════════════════════════════════
+  Primary Metric     : converted
+  Significance Level : α = 0.05
+  Sample Sizes       : Control=5,000  Treatment=5,000
+  Powered            : ⚠️  Underpowered — interpret with caution
+
+══════════════════════════════════════════════════════════════
+  RANDOMIZATION INTEGRITY
+══════════════════════════════════════════════════════════════
+  SRM Check          : ✅ No SRM — randomization looks healthy
+  Actual Split       : 0.5  (expected 0.500)
+  SRM p-value        : 1.0
+
+══════════════════════════════════════════════════════════════
+  PRIMARY METRIC RESULTS
+══════════════════════════════════════════════════════════════
+  Test Used          : Two-proportion z-test
+  Control Rate       : 0.2210
+  Treatment Rate     : 0.2282
+  Absolute Lift      : +0.0072
+  Relative Lift      : +3.3%  (if proportion test)
+  p-value            : 0.3883
+  Statistically Sig. : ❌ NO
+  Bootstrap 95% CI   : [-0.0090, +0.0238]
+
+══════════════════════════════════════════════════════════════
+  GUARDRAIL METRICS
+══════════════════════════════════════════════════════════════
+  sessions             : lift=-0.0360  p=0.2929  ✅ OK
+  revenue              : lift=+0.0174  p=0.9753  ✅ OK
+
+══════════════════════════════════════════════════════════════
+  SEGMENT BREAKDOWN
+══════════════════════════════════════════════════════════════
+
+  By device:
+       mobile         : lift=+0.0041  p=0.7144
+       desktop        : lift=+0.0059  p=0.6601
+       tablet         : lift=+0.0280  p=0.3715
+
+  By user_type:
+       power          : lift=+0.0232  p=0.2821
+       new            : lift=-0.0002  p=0.9875
+       returning      : lift=+0.0082  p=0.5096
+
+  By region:
+       Northeast      : lift=+0.0051  p=0.7450
+       West           : lift=-0.0206  p=0.2006
+    ✅ Southeast      : lift=+0.0470  p=0.0042
+       Midwest        : lift=-0.0042  p=0.8256
+
+══════════════════════════════════════════════════════════════
+  ✅ RECOMMENDATION
+══════════════════════════════════════════════════════════════
+  🟡 EXTEND — Positive trend but insufficient evidence; consider extending runtime
+
+  Rationale:
+  - Primary metric lift: +0.0072 (p=0.3883)
+  - 95% CI excludes zero: False
+  - All guardrail metrics: not degraded
+  - Sample size adequate: False
+
+══════════════════════════════════════════════════════════════
